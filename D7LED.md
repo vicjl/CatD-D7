@@ -65,3 +65,5 @@ sed -i 's/supportsystemperature="yes"/supportsystemperature="no"/g' /etc.default
 
 
 全部完成重启猫盘
+
+亲自测试，关闭风扇脚是DSM6的脚本，无用！其它有效。
