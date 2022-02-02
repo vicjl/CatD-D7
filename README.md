@@ -1,3 +1,5 @@
+# LED灯、硬盘休眠、完美关机、Hosts
+
 ### 小猫D7
 ```sh
 cd ~ && wget -N --no-check-certificate https://github.com/vicjl/CatD-D7/raw/main/install.sh && chmod +x /root/install.sh && bash /root/install.sh 120X
@@ -36,7 +38,15 @@ bash /etc/rc.local W
 bash /etc/rc.local X
 ```
 
-
+### Hosts
+```sh
+54.192.70.20 api.themoviedb.org
+54.192.70.80 api.themoviedb.org
+52.84.166.71 api.themoviedb.org
+13.35.167.63 api.themoviedb.org
+65.8.164.121 image.tmdb.org
+54.192.73.28 image.tmdb.org
+```
 * LED修复
 
 ```sh
