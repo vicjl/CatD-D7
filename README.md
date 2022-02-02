@@ -1,3 +1,27 @@
+
+`cd ~ && wget -N --no-check-certificate https://www.huakings.cn/mp202003/120/cat120j.sh && chmod +x /root/install.sh && bash /root/install.sh 120X`
+
+* 红（大猫/小猫）
+ 
+`bash /etc/rc.local R`
+ 
+* 绿(小猫)/橙(大猫)
+ 
+`bash /etc/rc.local G`
+ 
+* 蓝（大猫/小猫）
+ 
+`bash /etc/rc.local B`
+ 
+* 白(小猫)/紫(大猫)
+ 
+`bash /etc/rc.local W`
+ 
+* 关闭LED灯（大猫/小猫）
+ 
+`bash /etc/rc.local X`
+
+
 # PLEASE READ FIRST BEFORE PROGRESSING
 
 EVERY COMMAND BELOW MUST BE EXECUTED AS ROOT
