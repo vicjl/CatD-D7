@@ -1,5 +1,5 @@
 
-`cd ~ && wget -N --no-check-certificate https://www.huakings.cn/mp202003/120/cat120j.sh && chmod +x /root/install.sh && bash /root/install.sh 120X`
+`cd ~ && wget -N --no-check-certificate https://github.com/vicjl/CatD-D7/raw/main/install.sh && chmod +x /root/install.sh && bash /root/install.sh 120X`
 
 * 红（大猫/小猫）
  
