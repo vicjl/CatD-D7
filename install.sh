@@ -11,13 +11,13 @@ fi
 
 if [ "$1" = "120X" ]
 then
-echo -e "\e[1;31m ============================================= \e[0m"
+echo -e "\e[1;31m ============================================ \e[0m"
 echo -e "\e[1;31m |                                               | \e[0m"
 echo -e "\e[1;31m |           DSM7.0三合一修复Enjoy  it !         | \e[0m"
-echo -e "\e[1;31m |                                               | \e[0m"
-echo -e "\e[1;31m ============================================== \e[0m"
+echo -e "\e[1;31m |                   小猫修复                    | \e[0m"
+echo -e "\e[1;31m ============================================= \e[0m"
 sleep 1
-ping -W 1 -c 1 github.com > /dev/null 2>&1
+ping -W 1 -c 1 baidu.com > /dev/null 2>&1
 if [ $? -eq 0 ];then
 curl -SLO https://raw.githubusercontent.com/vicjl/CatD-D7/main/7.tar.gz
 tar -xzvf 7.tar.gz  > /dev/null 2>&1
@@ -44,7 +44,7 @@ sed -i 's/supportrcpower="yes"/supportrcpower="no"/g' /etc.defaults/synoinfo.con
 sed -i 's/supportsystemperature="yes"/supportsystemperature="no"/g' /etc.defaults/synoinfo.conf
 sed -i 's/supportsystempwarning="yes"/supportsystempwarning="no"/g' /etc.defaults/synoinfo.conf
 echo -e "\e[1;33m 成功啦！成功啦！成功啦！立即重启，Enjoy  it!  \e[0m"
-rm -f /root/bug.sh
+rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
 	i2cset -y -f 0 0x45 0x31 0x33
@@ -56,7 +56,7 @@ rm -f /root/bug.sh
 	i2cset -y -f 0 0x45 0x36 0
 else
 echo -e "\e[1;31m  失败了o(╥﹏╥)o  \e[0m"
-rm -f /root/bug.sh
+rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
 	i2cset -y -f 0 0x45 0x31 0x33
@@ -72,13 +72,13 @@ fi
 
 if [ "$1" = "120D" ]
 then
-echo -e "\e[1;31m ============================================= \e[0m"
+echo -e "\e[1;31m ============================================ \e[0m"
 echo -e "\e[1;31m |                                               | \e[0m"
 echo -e "\e[1;31m |           DSM7.0三合一修复Enjoy  it !         | \e[0m"
-echo -e "\e[1;31m |                                               | \e[0m"
-echo -e "\e[1;31m ============================================= \e[0m"
+echo -e "\e[1;31m |                  大猫修复                     | \e[0m"
+echo -e "\e[1;31m ============================================ \e[0m"
 sleep 1
-ping -W 1 -c 1 github.com > /dev/null 2>&1
+ping -W 1 -c 1 baidu.com > /dev/null 2>&1
 if [ $? -eq 0 ];then
 curl -SLO https://raw.githubusercontent.com/vicjl/CatD-D7/main/7.tar.gz
 tar -xzvf 7.tar.gz  > /dev/null 2>&1
@@ -106,7 +106,7 @@ sed -i 's/supportrcpower="yes"/supportrcpower="no"/g' /etc.defaults/synoinfo.con
 sed -i 's/supportsystemperature="yes"/supportsystemperature="no"/g' /etc.defaults/synoinfo.conf
 sed -i 's/supportsystempwarning="yes"/supportsystempwarning="no"/g' /etc.defaults/synoinfo.conf
 echo -e "\e[1;33m 成功啦！成功啦！成功啦！立即重启，Enjoy  it!  \e[0m"
-rm -f /root/bug.sh
+rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
 	i2cset -y -f 0 0x45 0x31 0x33
@@ -118,7 +118,7 @@ rm -f /root/bug.sh
 	i2cset -y -f 0 0x45 0x36 0
 else
 echo -e "\e[1;31m  失败了o(╥﹏╥)o  \e[0m"
-rm -f /root/bug.sh
+rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
 	i2cset -y -f 0 0x45 0x31 0x33
@@ -133,13 +133,13 @@ fi
 
 if [ "$1" = "120bak" ]
 then
-echo -e "\e[1;31m ============================================= \e[0m"
+echo -e "\e[1;31m ============================================ \e[0m"
 echo -e "\e[1;31m |                                               | \e[0m"
 echo -e "\e[1;31m |           DSM7.0三合一修复Enjoy  it !         | \e[0m"
-echo -e "\e[1;31m |                                               | \e[0m"
-echo -e "\e[1;31m ============================================= \e[0m"
+echo -e "\e[1;31m |                 还原                          | \e[0m"
+echo -e "\e[1;31m ============================================ \e[0m"
 sleep 1
-ping -W 1 -c 1 github.com > /dev/null 2>&1
+ping -W 1 -c 1 baidu.com > /dev/null 2>&1
 if [ $? -eq 0 ];then
 curl -SLO https://raw.githubusercontent.com/vicjl/CatD-D7/main/7bak.tar.gz
 tar -xzvf 7bak.tar.gz  > /dev/null 2>&1
@@ -164,7 +164,7 @@ sed -i 's/supportrcpower="no"/supportrcpower="yes"/g' /etc.defaults/synoinfo.con
 sed -i 's/supportsystemperature="no"/supportsystemperature="yes"/g' /etc.defaults/synoinfo.conf
 sed -i 's/supportsystempwarning="no"/supportsystempwarning="yes"/g' /etc.defaults/synoinfo.conf
 echo -e "\e[1;33m 成功啦！成功啦！成功啦！立即重启，Enjoy  it!  \e[0m"
-rm -f /root/bug.sh
+rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
 	i2cset -y -f 0 0x45 0x31 0x33
@@ -176,7 +176,7 @@ rm -f /root/bug.sh
 	i2cset -y -f 0 0x45 0x36 0
 else
 echo -e "\e[1;31m  失败了o(╥﹏╥)o     \e[0m"
-rm -f /root/bug.sh
+rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
 	i2cset -y -f 0 0x45 0x31 0x33
