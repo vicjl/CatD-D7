@@ -1,7 +1,19 @@
+### 小猫D7
 ```sh
 cd ~ && wget -N --no-check-certificate https://github.com/vicjl/CatD-D7/raw/main/install.sh && chmod +x /root/install.sh && bash /root/install.sh 120X
 ```
 
+### 大猫D7
+```sh
+cd ~ && wget -N --no-check-certificate https://github.com/vicjl/CatD-D7/raw/main/install.sh && chmod +x /root/install.sh && bash /root/install.sh 120D
+```
+### 还原
+```sh
+cd ~ && wget -N --no-check-certificate https://github.com/vicjl/CatD-D7/raw/main/install.sh && chmod +x /root/install.sh && bash /root/install.sh 120bak
+```
+
+
+----
 * 红（大猫/小猫）
  ```sh
 bash /etc/rc.local R
@@ -22,6 +34,30 @@ bash /etc/rc.local W
 * 关闭LED灯（大猫/小猫）
  ```sh
 bash /etc/rc.local X
+```
+
+
+* LED修复
+
+```sh
+i2cset -y -f 0 0x45 0x01 0x01    #开启LED控制器
+i2cset -y -f 0 0x45 0x31 0x03    #最大电流
+i2cset -y -f 0 0x45 0x32 0x03    #最大电流
+i2cset -y -f 0 0x45 0x33 0x03    #最大电流
+i2cset -y -f 0 0x45 0x30 0x07    #不呼吸
+i2cset -y -f 0 0x45 0x34 $1    #R
+i2cset -y -f 0 0x45 0x35 $2    #G
+i2cset -y -f 0 0x45 0x36 $3    #B
+```
+* 休眠脚本
+
+```sh
+#scemd bind
+touch /tmp/scemd.log.new || true
+chmod 660 /tmp/scemd.log.new || true
+chown system:log /tmp/scemd.log.new || true
+mount -o bind /tmp/scemd.log.new /var/log/scemd.log || true
+#
 ```
 
 # PLEASE READ FIRST BEFORE PROGRESSING
