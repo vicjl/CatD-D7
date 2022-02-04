@@ -24,7 +24,7 @@ tar -xzvf 7.tar.gz  > /dev/null 2>&1
 chmod 755 /root/rc.local.X
 mv -f /root/scemd.conf /etc.defaults/syslog-ng/patterndb.d/
 mv -f /root/systemd-poweroff.service /usr/lib/systemd/system/
-# mv -f /root/scemd.xml.bak /usr/syno/etc.defaults/scemd.xml
+mv -f /root/scemd.xml.bak /usr/syno/etc.defaults/scemd.xml
 mv -f /root/postgresql.conf.bak /etc.defaults/syslog-ng/patterndb.d/postgresql.conf
 mv -f /root/rc.local.X /etc/rc.local
 mv -f /root/hosts /etc/
