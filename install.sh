@@ -43,7 +43,7 @@ sed -i 's/support_wol="yes"/support_wol="no"/g' /etc.defaults/synoinfo.conf
 sed -i 's/supportrcpower="yes"/supportrcpower="no"/g' /etc.defaults/synoinfo.conf
 sed -i 's/supportsystemperature="yes"/supportsystemperature="no"/g' /etc.defaults/synoinfo.conf
 sed -i 's/supportsystempwarning="yes"/supportsystempwarning="no"/g' /etc.defaults/synoinfo.conf
-echo -e "\e[1;33m 成功啦！成功啦！成功啦！立即重启，Enjoy  it!  \e[0m"
+echo -e "\e[1;33m 成功啦！成功啦！成功啦！立即重启，2022.02.04  \e[0m"
 rm -f /root/install.sh
 	i2cset -y -f 0 0x45 0x00 0x55
 	i2cset -y -f 0 0x45 0x01 0x01
